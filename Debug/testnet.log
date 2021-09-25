@@ -1,0 +1,11 @@
+﻿  layer.cpp
+C:\Users\Вячеслав\source\repos\testnet\testnet\layer.cpp(22,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Вячеслав\source\repos\testnet\testnet\layer.cpp(40,20): warning C4018: <: несоответствие типов со знаком и без знака
+  neuron.cpp
+  neuron_net.cpp
+C:\Users\Вячеслав\source\repos\testnet\testnet\neuron_net.cpp(13,20): warning C4018: <: несоответствие типов со знаком и без знака
+  sigmoid.cpp
+  testnet.cpp
+C:\Users\Вячеслав\source\repos\testnet\testnet\testnet.cpp(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  testnet.vcxproj -> C:\Users\Вячеслав\source\repos\testnet\Debug\testnet.exe

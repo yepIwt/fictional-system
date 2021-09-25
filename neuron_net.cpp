@@ -1,15 +1,21 @@
 #include "neuron_net.h"
-neuron_net::neuron_net(int insz,int x) {
+neuron_net::neuron_net(int insz,int x, int outsz) {
 	net.resize(x + 1);
 	layer cur(insz,x);
 	net[0] = cur;
 	levelsz = x;
-	for (int i = 1; i <= x; i++) {
+	for (int i = 1; i < x - 1; i++) {
 		layer cur(x, x);
 		net[i] = cur;
 	}
+	{
+		layer cur(x, outsz);
+		net[x - 1] = cur;
+	}
+	layer cur1(outsz, 1);
+	net[x] = cur1;
 }
-double neuron_net::start(vector<double>&in) { // in.size() = insz
+vector<double>& neuron_net::start(vector<double>&in) { // in.size() = insz
 	for (int i = 0; i < in.size(); i++) {
 		net[0].in_neuron(i, in[i]);
 	}
@@ -21,8 +27,12 @@ double neuron_net::start(vector<double>&in) { // in.size() = insz
 	}
 	double ans = 0;
 	int sz = net.size() - 1;
+	ansar.clear();
 	for (int i = 0; i < net[sz].layer_sz; i++) {
-		ans += net[sz].get_neuron_actual(i);
+		ansar.push_back(net[sz].get_neuron_actual(i));
 	}
-	return sigmoid(ans);
+	return ansar;
+}
+void neuron_net::back_propagate(double ans) {
+
 }

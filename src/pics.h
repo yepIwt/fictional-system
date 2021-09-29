@@ -5,6 +5,8 @@
 
 #include <string>
 
+#include <iostream>
+
 QImage open_picture(std::string pic_name){
     QImage image;
     QString qpic_name = pic_name.c_str();
@@ -19,9 +21,6 @@ QImage crop_picture(QImage picture_obj, int x1, int y1, int x2, int y2){
 };
 
 QImage make_bw(QImage picture_obj){
-    // QImage bw_pic = picture_obj;
-    // bw_pic.applyColorTransform(QImage::Format_Grayscale8);
-    // return bw_pic;
     QSize sizeImage = picture_obj.size();
     int width = sizeImage.width(), height = sizeImage.height();
     QRgb color;
@@ -36,6 +35,46 @@ QImage make_bw(QImage picture_obj){
     return picture_obj;
 
 };
+
+void lgb(QImage picture_obj){
+    QSize sizeImage = picture_obj.size();
+    int width = sizeImage.width(), height = sizeImage.height();
+    int max = (width * height) / 9;
+    int answ[max][3][3];
+
+    int counter=0;
+    //std::cout<<width<<" "<<height<<"\n";
+    for (int i=0; i<width; i++){
+        for (int j=0; j<height; j++){
+            int num = (i/3) * (width/3) + (j/3);
+           // int ci = i - (num / 3) * 3;
+           // int cj = j - (num % 3) * 3;
+            int ci = i - (num / (width / 3))*3;
+            int cj = j - (num % (width / 3))*3;
+            int color =  picture_obj.pixel(i,j);
+            answ[num][ci][cj] = qRed(color) + qGreen(color) + qBlue(color);
+        }
+    }
+    
+
+    for (int i=0; i<3; i++){
+        for (int j=0; j<3; j++){
+            std::cout << answ[0][i][j];
+            std::cout << " | ";
+        }
+        std::cout << "\n";
+    }
+    std::cout << "\n\n";
+
+    // for (int i=0; i < width; i++){
+    //     for (int j=0; j < height; j++){
+    //         int num = (i/3) * (width/3) * (j/3);
+    //         std::cout << ""
+    //     }
+    // }
+
+
+}
 
 void save_image(QImage picture_obj, std::string filename){
     QString qfilename = filename.c_str();

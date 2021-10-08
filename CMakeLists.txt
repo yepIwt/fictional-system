@@ -3,7 +3,10 @@ project(Qt-CMake-HelloWorld)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_PREFIX_PATH "C:\\Qt\\6.1.3\\mingw81_64\\lib\\cmake")
+
+
+set(CMAKE_PREFIX_PATH "/home/sergievsky/Qt/6.1.3/gcc_64/lib/cmake/")
+
 
 find_package(Qt6Widgets REQUIRED)
 

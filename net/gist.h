@@ -1,4 +1,4 @@
-#ifndef gist
+//#ifndef gist
 #include <QtWidgets>
 #include <QApplication>
 #include <QString>
@@ -32,7 +32,7 @@ public:
 			for (int j = 0; j < height; j++) { // Qimage.pixel(x,y)
 				color = cur.pixel(i, j);
 				curn = (0.216 * qRed(color)) + (0.7152 * qGreen(color)) + (0.0722 * qBlue(color));
-				if (abs(curn - border < EPS)) {
+				if (curn - border < EPS) {
 					res.setPixelColor(i, j, Qt::black);
 				}
 				else {
@@ -43,4 +43,4 @@ public:
 		return res;
 	}
 };
-#endif // !gist
+//#endif // !gist

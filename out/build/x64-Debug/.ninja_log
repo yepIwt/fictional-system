@@ -1,0 +1,21 @@
+# ninja log v5
+14	350	6572226338920245	pics_autogen/timestamp	9b1d30d86c4dbd31
+350	1160	6572226348252250	CMakeFiles/pics.dir/pics_autogen/mocs_compilation.cpp.obj	ef7e45b07bb7e77d
+23	337	6572226338920245	helloworld_autogen/timestamp	81659bc719412ff1
+344	1152	6572226348302236	CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.obj	cbff32291a46752f
+1161	1328	6572226350162380	pics.lib	ff6544d65e81bf76
+338	12212	6572226459012230	CMakeFiles/helloworld.dir/main.cpp.obj	294a8e0b433e111f
+12212	12807	6572226464032647	../../../release/helloworld.exe	bfc2605e37b276d8
+14	294	6572243394417705	pics_autogen/timestamp	9b1d30d86c4dbd31
+8	308	6572243394507719	helloworld_autogen/timestamp	81659bc719412ff1
+303	1029	6572243403072673	CMakeFiles/pics.dir/pics_autogen/mocs_compilation.cpp.obj	ef7e45b07bb7e77d
+308	1043	6572243403252686	CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.obj	cbff32291a46752f
+1030	1167	6572243404442774	pics.lib	ff6544d65e81bf76
+312	12445	6572243517229019	CMakeFiles/helloworld.dir/main.cpp.obj	294a8e0b433e111f
+12445	12983	6572243521619561	../../../release/helloworld.exe	bfc2605e37b276d8
+8	257	6572243868567957	helloworld_autogen/timestamp	81659bc719412ff1
+262	706	6572243874178803	CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.obj	cbff32291a46752f
+257	10890	6572243975980847	CMakeFiles/helloworld.dir/main.cpp.obj	294a8e0b433e111f
+10890	11334	6572243979601164	../../../release/helloworld.exe	bfc2605e37b276d8
+7	11296	6572244264655366	CMakeFiles/helloworld.dir/main.cpp.obj	294a8e0b433e111f
+11297	11780	6572244268751290	../../../release/helloworld.exe	bfc2605e37b276d8

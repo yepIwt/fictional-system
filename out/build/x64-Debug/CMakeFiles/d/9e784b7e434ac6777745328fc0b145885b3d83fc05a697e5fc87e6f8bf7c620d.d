@@ -97,11 +97,14 @@ pics_autogen/timestamp: \
   C:/QtNikita/6.1.3/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   C:/QtNikita/6.1.3/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
   ../../../CMakeLists.txt \
+  ../../../net/algen.h \
+  ../../../net/countmask.h \
   ../../../net/gist.h \
+  ../../../net/prefim.h \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeRCCompiler.cmake \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeSystem.cmake \
-  ../../../src/lbp.h \
-  ../../../src/pics.h \
+  ../../../release/src/lbp.h \
+  ../../../release/src/pics.h \
   C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe

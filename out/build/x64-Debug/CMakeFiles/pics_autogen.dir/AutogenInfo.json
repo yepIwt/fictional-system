@@ -181,21 +181,39 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/algen.h",
+			"MU",
+			"Q6KNN7S663/moc_algen.cpp",
+			null
+		],
+		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/countmask.h",
+			"MU",
+			"Q6KNN7S663/moc_countmask.cpp",
+			null
+		],
+		[
 			"C:/Users/Вячеслав/source/repos/fictional-system3/net/gist.h",
 			"MU",
 			"Q6KNN7S663/moc_gist.cpp",
 			null
 		],
 		[
-			"C:/Users/Вячеслав/source/repos/fictional-system3/src/lbp.h",
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/prefim.h",
 			"MU",
-			"UVLADIE3JM/moc_lbp.cpp",
+			"Q6KNN7S663/moc_prefim.cpp",
 			null
 		],
 		[
-			"C:/Users/Вячеслав/source/repos/fictional-system3/src/pics.h",
+			"C:/Users/Вячеслав/source/repos/fictional-system3/release/src/lbp.h",
 			"MU",
-			"UVLADIE3JM/moc_pics.cpp",
+			"JI5ZOLQTRK/moc_lbp.cpp",
+			null
+		],
+		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/release/src/pics.h",
+			"MU",
+			"JI5ZOLQTRK/moc_pics.cpp",
 			null
 		]
 	],

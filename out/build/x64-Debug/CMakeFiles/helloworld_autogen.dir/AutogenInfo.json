@@ -181,9 +181,27 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/algen.h",
+			"MU",
+			"Q6KNN7S663/moc_algen.cpp",
+			null
+		],
+		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/countmask.h",
+			"MU",
+			"Q6KNN7S663/moc_countmask.cpp",
+			null
+		],
+		[
 			"C:/Users/Вячеслав/source/repos/fictional-system3/net/gist.h",
 			"MU",
 			"Q6KNN7S663/moc_gist.cpp",
+			null
+		],
+		[
+			"C:/Users/Вячеслав/source/repos/fictional-system3/net/prefim.h",
+			"MU",
+			"Q6KNN7S663/moc_prefim.cpp",
 			null
 		]
 	],

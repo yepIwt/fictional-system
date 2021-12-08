@@ -187,7 +187,7 @@ build helloworld_autogen\timestamp: CUSTOM_COMMAND C$:\QtNikita\6.1.3\msvc2019_6
 #############################################
 # Phony custom command for CMakeFiles\pics_autogen_timestamp_deps
 
-build CMakeFiles\pics_autogen_timestamp_deps: phony C$:\QtNikita\6.1.3\msvc2019_64\.\bin\moc.exe C$:\QtNikita\6.1.3\msvc2019_64\.\bin\uic.exe
+build CMakeFiles\pics_autogen_timestamp_deps: phony C$:\QtNikita\6.1.3\msvc2019_64\.\bin\uic.exe C$:\QtNikita\6.1.3\msvc2019_64\.\bin\moc.exe
 
 
 #############################################
@@ -199,7 +199,7 @@ build CMakeFiles\pics_autogen pics_autogen\mocs_compilation.cpp: phony pics_auto
 #############################################
 # Phony custom command for CMakeFiles\helloworld_autogen_timestamp_deps
 
-build CMakeFiles\helloworld_autogen_timestamp_deps: phony C$:\QtNikita\6.1.3\msvc2019_64\.\bin\moc.exe C$:\QtNikita\6.1.3\msvc2019_64\.\bin\uic.exe C$:\QtNikita\6.1.3\msvc2019_64\bin\Qt6Widgetsd.dll
+build CMakeFiles\helloworld_autogen_timestamp_deps: phony C$:\QtNikita\6.1.3\msvc2019_64\.\bin\uic.exe C$:\QtNikita\6.1.3\msvc2019_64\.\bin\moc.exe C$:\QtNikita\6.1.3\msvc2019_64\bin\Qt6Widgetsd.dll
 
 
 #############################################

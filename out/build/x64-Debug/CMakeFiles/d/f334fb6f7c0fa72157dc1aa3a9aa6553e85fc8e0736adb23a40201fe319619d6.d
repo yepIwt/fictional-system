@@ -98,7 +98,10 @@ helloworld_autogen/timestamp: \
   C:/QtNikita/6.1.3/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
   ../../../CMakeLists.txt \
   ../../../main.cpp \
+  ../../../net/algen.h \
+  ../../../net/countmask.h \
   ../../../net/gist.h \
+  ../../../net/prefim.h \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeRCCompiler.cmake \

@@ -98,7 +98,10 @@ helloworld_autogen/timestamp: \
 	C:/QtNikita/6.1.3/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
 	C:/Users/Вячеслав/source/repos/fictional-system3/CMakeLists.txt \
 	C:/Users/Вячеслав/source/repos/fictional-system3/main.cpp \
+	C:/Users/Вячеслав/source/repos/fictional-system3/net/algen.h \
+	C:/Users/Вячеслав/source/repos/fictional-system3/net/countmask.h \
 	C:/Users/Вячеслав/source/repos/fictional-system3/net/gist.h \
+	C:/Users/Вячеслав/source/repos/fictional-system3/net/prefim.h \
 	C:/Users/Вячеслав/source/repos/fictional-system3/out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake \
 	C:/Users/Вячеслав/source/repos/fictional-system3/out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCXXCompiler.cmake \
 	C:/Users/Вячеслав/source/repos/fictional-system3/out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeRCCompiler.cmake \

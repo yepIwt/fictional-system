@@ -2,43 +2,80 @@
 #include <QApplication>
 #include <QtGui>
 #include <iostream>
-#include "src/pics.h"
-#include "src/lbp.h"
+#include "release/src/pics.h"
+#include "release/src/lbp.h"
 #include "net/gist.h"
-#include "net/shab.h"
+#include "net/algen.h"
+#include "net/countmask.h"
+#include "net/prefim.h"
+#include <sstream>
+using namespace filesystem;
+//#include "net/shab.h"
 const int P = 8;
 const int R = 1;
-
+const int szimx = 32;
+const int szimy = 32;
+char trash;
 int main(int argc, char *argv[]){
+    const string waycasc = "D:/maybe_project/cascades/";
+    const string waytestim = "D:/faces_aligned_small_mirrored_co_aligned_cropped_cleaned/M/";
 
-    /* Example using */
-
-    /* Step 1 */
-    //QImage pic = open_picture("human.png");
-    QImage pic = open_picture("a_b0416f14.png");
-    if (!pic.isNull()) std::cout << "picload\n";
-    else std::cout << "pic unload";
-    gist gi;
-    QImage res = gi.build(pic);
-    save_picture(res, "gisto.png");
-    res = generate(0, 0, 5, 5, 32, 32);
-    save_picture(res, "testhaar.png");
-    ///* Step 2 */
-    //pic = lead_to_a_common_denominator(pic, R);
-
-    ///* Step 3 */
-    //QImage bw_pic = make_bw_picture(pic);
-    //save_picture(bw_pic, "BW.png");
-
-    ///* Step 4 */
-    //LBP lbp_algorithm(bw_pic, P, R);
-    //QImage lbp_result = lbp_algorithm.create_circle_lbp();
-
-    ///* Step 5 */
-    //save_picture(lbp_result, "LBP.png");
-    //gist img;
-    //img.set_n(10.0);
-    //QImage resg = img.build(pic);
-    ////img.build("LBP.png");
-    return 0;
+    //map<string, pair<double,double>>mp;
+    //for (auto& entry : directory_iterator(waycasc)) {
+    //    stringstream prom;
+    //    // entry - string (name of file)
+    //    //double cnterror = 0;
+    //    //double cbnttrue = 0;
+    //    //prom.clear();
+    //    prom.str("");
+    //    prom << entry;
+    //    prom.flush();
+    //    string pthe;
+    //    prom >> trash;
+    //    prom >> pthe;
+    //    pthe.pop_back();
+    //    //prom.clear();
+    //    //entry.path();
+    //    int sumb = 0;
+    //    int sumw = 0;
+    //    QImage casc = open_picture(pthe);
+    //    //map<int, int>bar;
+    //    for (auto& entryim : directory_iterator(waytestim)) {
+    //        stringstream prom;
+    //        prom.str("");
+    //        string pthim;
+    //        prom << entryim;
+    //        prom.flush();
+    //        prom >> trash;
+    //        prom >> pthim;
+    //        pthim.pop_back();
+    //        QImage im = open_picture(pthim);
+    //        scale(im);
+    //        QImage imbw = make_bw_picture(im);
+    //        spref image(imbw);
+    //        QRgb colorrgb;
+    //        QColor color;
+    //        QColor chw;
+    //        for (int j = 0; j < szimx; j++) {
+    //            for (int i = 0; i < szimy; i++) {
+    //                colorrgb = casc.pixel(i, j);
+    //                color = colorrgb;
+    //                //chw = Qt::black;
+    //                if (color == Qt::black) {
+    //                    sumb += image.query(j, i, j, i);
+    //                }
+    //                else sumw += image.query(j, i, j, i);
+    //            }
+    //        }
+    //        int br = sumw - sumb;
+    //        bar.push_back(br);
+    //        if (bar.size() == maxszbar) break;
+    //       // cout << sumw << " " << sumb << "\n";
+    //    }
+    //    break;
+    //}
+    //int n = bar.size();
+    //sort(bar.begin(), bar.end());
+    //cout << bar[n / 2] << "\n";
+    //return 0;
 }

@@ -16,8 +16,8 @@ set(CMAKE_AUTORCC ON)
 
 set(EXECUTABLE_OUTPUT_PATH "..\\..\\..\\release")
 
-add_library (pics "release/src/pics.h" "release/src/lbp.h" "net/gist.h" "net/algen.h" "net/countmask.h" "net/prefim.h")
+add_library (pics "release/src/pics.h" "release/src/lbp.h" "net/gist.h" "net/algen.h" "net/countmask.h" "net/prefim.h" "net/create_w.h")
 
-add_executable(helloworld main.cpp "net/gist.h" "net/algen.h" "net/countmask.h" "net/prefim.h")
+add_executable(helloworld main.cpp "net/gist.h" "net/algen.h" "net/countmask.h" "net/prefim.h" "net/create_w.h")
 
 target_link_libraries(helloworld Qt6::Widgets)

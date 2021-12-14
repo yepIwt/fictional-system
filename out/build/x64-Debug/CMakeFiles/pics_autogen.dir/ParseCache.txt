@@ -7,3 +7,4 @@ C:/Users/Вячеслав/source/repos/fictional-system3/src/pics.h
 C:/Users/Вячеслав/source/repos/fictional-system3/net/algen.h
 C:/Users/Вячеслав/source/repos/fictional-system3/release/src/lbp.h
 C:/Users/Вячеслав/source/repos/fictional-system3/release/src/pics.h
+C:/Users/Вячеслав/source/repos/fictional-system3/net/create_w.h

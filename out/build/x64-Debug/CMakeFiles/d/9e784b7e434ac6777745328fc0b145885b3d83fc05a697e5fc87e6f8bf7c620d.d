@@ -99,6 +99,7 @@ pics_autogen/timestamp: \
   ../../../CMakeLists.txt \
   ../../../net/algen.h \
   ../../../net/countmask.h \
+  ../../../net/create_w.h \
   ../../../net/gist.h \
   ../../../net/prefim.h \
   CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake \

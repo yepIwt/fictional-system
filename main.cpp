@@ -1,18 +1,18 @@
-#include "release/src/pics.h"
-#include "release/src/lbp.h"
-#include "net/gist.h"
-#include "net/algen.h"
-#include "net/countmask.h"
-#include "net/prefim.h"
+#include "src/pics/pics.h"
+#include "src/pics/lbp.h"
+#include "src//net/gist.h"
+#include "src/net/algen.h"
+#include "src/net/countmask.h"
+#include "src/net/prefim.h"
 #include <QtWidgets>
 #include <QApplication>
 #include <QtGui>
 #include <iostream>
 #include <sstream>
-#include "net/create_w.h"
+#include "src/net/create_w.h"
 using namespace std;
 using namespace filesystem;
-#include "net/shab.h"
+#include "src/net/shab.h"
 const int P = 8;
 const int R = 1;
 const int szimx = 32;

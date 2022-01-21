@@ -1,32 +1,57 @@
-#include "src/pics/pics.h"
-#include "src/pics/lbp.h"
-#include "src//net/gist.h"
-#include "src/net/algen.h"
-#include "src/net/countmask.h"
-#include "src/net/prefim.h"
+#include <iostream>
+#include <sstream>
+
 #include <QtWidgets>
 #include <QApplication>
 #include <QtGui>
-#include <iostream>
-#include <sstream>
-#include "src/net/create_w.h"
+
+// PICS methods
+#include "src/pics/pics.h"
+#include "src/pics/lbp.h"
+
+// NET / STRUCTURE methods
+#include "src/net/structure/prefim.h"
+
+// NET / TEMPLATES methods
+#include "src/net/templates/algen.h"
+#include "src/net/templates/create_w.h"
+
+// NET methods
+#include "src/net/countmask.h"
+
 using namespace std;
 using namespace filesystem;
-#include "src/net/shab.h"
+
 const int P = 8;
 const int R = 1;
 const int szimx = 32;
 const int szimy = 32;
+
 const char* wayshab = "D:/maybe_project/sources/shabk.out";
-void init(vector<pair<pair<int, int>, pair<int, int>>>& shab) {
+
+void init(
+    vector<
+        pair<
+            pair<int, int>, 
+            pair<int, int>
+        >
+    >& shab) {
     freopen(wayshab, "r", stdin);
     int xl, yl, xr, yr;
+
     while (cin >> xl >> yl >> xr >> yr) {
         shab.push_back({ {xl,yl},{xr,yr} });
     }
 }
+
 int main(int argc, char *argv[]){
-    vector<pair<pair<int, int>, pair<int, int>>>shab;
+    
+    vector<
+        pair<
+            pair<int, int>, 
+            pair<int, int>
+        >
+    > shab;
     vector<double>threshold;
     init(shab);
     cntweak(threshold, shab);

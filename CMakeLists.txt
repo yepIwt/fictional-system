@@ -52,6 +52,6 @@ add_library (
     "src/net/structure/prefim.h"
     "src/net/templates/create_w.h"
 )
-add_executable(helloworld main.cpp)
+add_executable(helloworld main.cpp ${NET} ${PICS})
 
 target_link_libraries(helloworld Qt6::Widgets)

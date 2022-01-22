@@ -27,7 +27,7 @@ else()
 
 endif (WIN32)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt6Widgets REQUIRED)
@@ -36,7 +36,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-set(EXECUTABLE_OUTPUT_PATH "..\\release")
+set(EXECUTABLE_OUTPUT_PATH "C:\\Users\\Вячеслав\\source\\repos\\fictional-system\\release")
 
 # Build and link
 add_library (
@@ -52,6 +52,6 @@ add_library (
     "src/net/structure/prefim.h"
     "src/net/templates/create_w.h"
 )
-add_executable(helloworld main.cpp ${NET} ${PICS})
+add_executable(fict main.cpp ${NET} ${PICS})
 
-target_link_libraries(helloworld Qt6::Widgets)
+target_link_libraries(fict Qt6::Widgets)

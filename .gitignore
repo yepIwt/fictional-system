@@ -1,9 +1,6 @@
 build/
 .vscode/
 .vs/
-release/
-!release/fict.exe
-!release/fict
 out/
 Debug/
 *.vcxproj

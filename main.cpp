@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-
+#include <vector>
 #include <QtWidgets>
 #include <QApplication>
 #include <QtGui>
@@ -18,6 +18,8 @@
 
 // NET methods
 #include "src/net/countmask.h"
+
+
 
 using namespace std;
 using namespace filesystem;
@@ -46,15 +48,10 @@ void init(
 
 int main(int argc, char *argv[]){
     
-    vector<
-        pair<
-            pair<int, int>, 
-            pair<int, int>
-        >
-    > shab;
+    vector<pair<pair<int, int>, pair<int, int>>> shab;
     vector<double>threshold;
     init(shab);
-    cntweak(threshold, shab);
+    //cntweak(threshold, shab);
     //freopen("rest")
     //gen(szimx, szimy,szimx,szimy);
     //const string waycasc = "D:/maybe_project/cascades/";

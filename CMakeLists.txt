@@ -17,7 +17,7 @@ set(username $ENV{USERNAME})
 if (WIN32)
     # bg1622h config laptop
     if (username MATCHES "Вячеслав")
-    set(CMAKE_CXX_STANDARD 11)
+    set(CMAKE_CXX_STANDARD 17)
     set(CMAKE_INCLUDE_CURRENT_DIR ON)
     set(CMAKE_PREFIX_PATH "C:\\Qt\\6.1.3\\mingw81_64\\lib\\cmake")
     endif (username MATCHES "Вячеслав")

@@ -3,13 +3,13 @@
 #include <string>
 #include <sstream>
 #include <time.h>
-#include <algorithm> // random_shuffle
-
+//#include <algori> // random_shuffle
 // directory iterator required
 #include <fstream>
+#include <algorithm>
 #include <iostream>
 #include <filesystem>
-
+using namespace std;
 void takenames(std::vector<std::pair <std::string, int>>& testim, std::string& path, int val) {
 
     const std::filesystem::path iter_path{path};
@@ -60,7 +60,7 @@ void cntweak(
     takenames(testim, pathf, -1);
     
     // was std::random_shuffle(takenames.begin(), takenames.end()); idk its bullshit
-    std::random_shuffle(testim.begin(), testim.end());
+   // random_shuffle(testim.begin(), testim.end());
 
     // tommorow, i go to sleep
     // OK

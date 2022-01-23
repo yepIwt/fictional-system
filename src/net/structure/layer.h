@@ -1,4 +1,6 @@
-#ifndef layer
+#ifndef LAYER_H
+#define LAYER_H
+
 #include "neuron.h"
 
 class layer {

@@ -19,7 +19,7 @@
 // NET methods
 #include "src/net/countmask.h"
 
-
+#define pii pair<int,int>
 
 using namespace std;
 using namespace filesystem;
@@ -32,12 +32,7 @@ const int szimy = 32;
 const char* wayshab = "D:/maybe_project/sources/shabk.out";
 
 void init(
-    vector<
-        pair<
-            pair<int, int>, 
-            pair<int, int>
-        >
-    >& shab) {
+    vector<pair<pii, pii>>& shab) {
     freopen(wayshab, "r", stdin);
     int xl, yl, xr, yr;
 
@@ -48,9 +43,10 @@ void init(
 
 int main(int argc, char *argv[]){
     
-    vector<pair<pair<int, int>, pair<int, int>>> shab;
-    vector<double>threshold;
+    vector<pair<pii, pii>> shab;
+    vector<double> threshold;
     init(shab);
+    std::cout << "Something works";
     //cntweak(threshold, shab);
     //freopen("rest")
     //gen(szimx, szimy,szimx,szimy);

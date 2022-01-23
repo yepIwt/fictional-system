@@ -1,4 +1,6 @@
-#ifndef neuron_net
+#ifndef NEURON_NET_H
+#define NEURON_NET_H
+
 #include "layer.h"
 
 class neuron_net {

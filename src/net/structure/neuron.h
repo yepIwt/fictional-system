@@ -1,4 +1,6 @@
-#ifndef neuron
+#ifndef NEURON_H
+#ifndef NEURON_H
+
 #include <vector>
 #include "sigmoid.h"
 

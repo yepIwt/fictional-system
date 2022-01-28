@@ -4,20 +4,26 @@
 #include <QtWidgets>
 #include <QApplication>
 #include <QtGui>
+//Libs
+#include "src/learning.h"
+#include "src/pics_set.h"
+#include "src/struct.h"
+//#include "src/learning/countmask.h"
+
 
 // PICS methods
-#include "src/pics/pics.h"
-#include "src/pics/lbp.h"
+//#include "src/pics/set/pics.h"
+//#include "src/pics/set/lbp.h"
 
 // NET / STRUCTURE methods
-#include "src/net/structure/prefim.h"
+//#include "src/struct/prefim.h"5
 
 // NET / TEMPLATES methods
-#include "src/net/templates/algen.h"
-#include "src/net/templates/create_w.h"
+//#include "src/struct/algen.h"
+//#include "src/learning/create_w.h"
 
 // NET methods
-#include "src/net/countmask.h"
+//#include "src/learning/countmask.h"
 
 #define pii pair<int,int>
 

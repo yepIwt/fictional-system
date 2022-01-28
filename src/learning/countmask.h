@@ -1,8 +1,14 @@
+#ifndef __count_msk2__
+
+#define __count_msk2__
+
 #include <iostream>
 
 #include <QImage>
 #include <QSize>
 #include <QColor>
+//#include "src/pics/set/pics.h"
+#include "..\pics\set\pics.h"
 
 using namespace std;
 int cnt(string& shabname, string&imagename, int sposx, int sposy) {
@@ -29,3 +35,4 @@ int cnt(string& shabname, string&imagename, int sposx, int sposy) {
 
 	if (sumblack > sumwhite) return 1; else return 2;
 }
+#endif

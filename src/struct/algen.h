@@ -1,3 +1,5 @@
+#ifndef __algen__
+#define __algen__
 #include <string>
 
 #include <QString>
@@ -49,3 +51,4 @@ void gen(const int szx, const int szy, int maxw, int maxh) {
 		}
 	}
 }
+#endif

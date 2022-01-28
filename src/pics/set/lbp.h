@@ -1,4 +1,6 @@
-﻿#include <QtGui>
+﻿#ifndef __lbp__
+#define __lbp__
+#include <QtGui>
 #include <vector>
 
 #include <bitset>
@@ -182,3 +184,4 @@ private:
         return value;
     }
 };
+#endif

@@ -1,3 +1,7 @@
+#ifndef __pics__
+
+#define __pics__
+
 #include <QtWidgets>
 #include <QApplication>
 #include <QString>
@@ -64,3 +68,4 @@ void scale(QImage& in) {
    in = res;
    return;
 }
+#endif

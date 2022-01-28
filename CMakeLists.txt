@@ -39,18 +39,38 @@ set(CMAKE_AUTORCC ON)
 # Build and link
 add_library (
     PICS 
-    "src/pics/pics.h"
-    "src/pics/lbp.h"
+    "src/pics/set/pics.h"
+    "src/pics/set/lbp.h"
 )
 
 add_library (
     NET
-    "src/net/templates/algen.h"
-    "src/net/countmask.h"
-    "src/net/structure/prefim.h"
-    "src/net/templates/create_w.h"
+    #"src/net/templates/algen.h"
+    #"src/net/countmask.h"
+    #"src/net/structure/prefim.h"
+    #"src/net/templates/create_w.h"
+)
+add_library(
+    LEARNING
+    "src/learning/adaboost.h"
+  #  "src/learning/countmask.h"
+   # "src/learning/create_w.h"
+)
+add_library(
+    STRUCT
+    "src/struct/algen.h"
+    "src/struct/prefim.h"
+    "src/struct/shab.h"
+    "src/struct/sigmoid.h"
 )
 
-add_executable(fict main.cpp ${NET} ${PICS})
+add_library(
+    SRC
+    "src/learning.h"
+    "src/net.h"
+    "src/pics_get.h"
+    "src/pics_set.h"
+)
+add_executable(fict main.cpp ${SRC})
 
 target_link_libraries(fict Qt6::Widgets)

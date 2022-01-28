@@ -1,3 +1,8 @@
+#ifndef __createw__
+
+
+#define __createw__
+
 #include <random>
 #include <vector>
 #include <string>
@@ -65,3 +70,4 @@ void cntweak(
     // tommorow, i go to sleep
     // OK
 }
+#endif

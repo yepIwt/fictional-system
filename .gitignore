@@ -1,9 +1,8 @@
-build/
 .vscode/
 .vs/
-out/
 Debug/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
-
+/out/
+/release/
